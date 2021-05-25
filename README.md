@@ -6,4 +6,4 @@ Link para a pasta do Drive com o vídeo de funcionamento (parte 1):
 [Google Drive - Joanderson Gonçalves](https://drive.google.com/drive/folders/1EZAJRriYgR_NvCIPxeBrczKSH6ocJFo6?usp=sharing)
 
 Link para a pasta do Drive com o vídeo de funcionamento (parte 2):
-[Google Drive - parte 2](https://drive.google.com/file/d/1ftb4csgERZp7HG04bdolhFuDrVXoHW2R/view?usp=sharing)
+[Google Drive - parte 2](https://drive.google.com/drive/folders/15LLy7TUr1zOXuPMSCj_-l3WrHh9G9m2j?usp=sharing)
