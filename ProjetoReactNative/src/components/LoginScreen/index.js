@@ -1,12 +1,11 @@
 import 'react-native-gesture-handler';
-import React, { Component } from 'react';
+import React, { useState, Component } from 'react';
 import { Text, View, Image, TextInput, TouchableOpacity, Alert, ImageBackground } from 'react-native';
 import styles from './styles'
-import { NavigationContainer, StackActions } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
 
 const LoginScreen = ({ navigation }) => {
 
+  const [email, setEmail] = useState() 
 
   return (
     <View style={styles.container}>
@@ -25,6 +24,7 @@ const LoginScreen = ({ navigation }) => {
           <TextInput
             style={styles.input}
             placeholder="Informe seu e-mail"
+            onChangeText={text => setEmail(text)}
           />
 
           <TextInput
@@ -35,7 +35,7 @@ const LoginScreen = ({ navigation }) => {
 
           <TouchableOpacity
             style={styles.button} onPress={() => {
-              console.info('Iniciando a aplicação...')
+              navigation.navigate('Home', {'email' : email})
             }}>
             <Text style={styles.buttonText}>Acessar</Text>
           </TouchableOpacity>
@@ -43,7 +43,7 @@ const LoginScreen = ({ navigation }) => {
           <Text style={styles.bottomText}>Ainda não possui conta? {' '}
             <TouchableOpacity>
               <Text style={styles.bottomTextClickable} onPress={() => {
-                navigation.navigate('Registre-se')
+                navigation.navigate('Register')
               }
               }>Registre-se</Text>
             </TouchableOpacity>

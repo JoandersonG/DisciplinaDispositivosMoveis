@@ -1,12 +1,10 @@
 //import liraries
+import React, { Component } from 'react';
 import {createAppContainer} from 'react-navigation'; 
 import { createDrawerNavigator } from 'react-navigation-drawer';
-import { createStackNavigator } from 'react-navigation-stack';
 
 import Home from './src/components/HomeScreen';
 import Profile from './src/components/ProfileScreen';
-import Login from './src/components/LoginScreen'
-import Register from './src/components/RegisterScreen'
 
 const MainDrawer = createDrawerNavigator(
   {
@@ -17,7 +15,7 @@ const MainDrawer = createDrawerNavigator(
   //Prop 
   contentOptions: {
     //Sempre que a aba estiver ativa, manter essa cor
-    activeTintColor: `#80ccc0`,
+    activeTintColor: `#800000`,
     //Prop
     //Permite aumentar a fonte 
     labelStyle: {
@@ -27,27 +25,11 @@ const MainDrawer = createDrawerNavigator(
 }
 )
 
-const AppNavigator = createStackNavigator({
-  Login: {
-    screen: Login,
-    navigationOptions: {
-      headerShown: false,
-    },
-  },
-  Register: {
-    screen: Register,
-  },
-  Drawer: {
-    screen: MainDrawer,
-    navigationOptions: {
-      headerShown: false,
-    },
-  }
-});
-
 //make this component available to the app
 //export the component of our drawer
-export default createAppContainer(AppNavigator);
+export default createAppContainer(MainDrawer);
+
+
 
 
 

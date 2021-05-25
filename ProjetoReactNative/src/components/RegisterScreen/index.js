@@ -1,10 +1,8 @@
 import 'react-native-gesture-handler';
-import React, { Component, useState } from 'react';
+import React, { useState } from 'react';
 import { Text, View, Image, TextInput, TouchableOpacity, Alert, ImageBackground } from 'react-native';
 import { TextInputMask } from 'react-native-masked-text'
 import styles from './styles'
-import { NavigationContainer, StackActions } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
 
 const RegisterScreen = ({ navigation }) => {
 
